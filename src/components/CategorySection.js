@@ -15,7 +15,7 @@ const CategorySection = () => {
         <h2 className="text-center">KATEGORI AKSARA</h2>
         <br />
         <Row>
-          <Col md={4} id="categories">
+          <Col md={4} className="categoryWrapper" id="categories">
             <Card className="categoryImage">
               <Image
                 src={NglegenaImage}
@@ -23,7 +23,7 @@ const CategorySection = () => {
                 className="images"
               />
               <div>
-                <div className="p-2 m-2">
+                <div className="p-3 m-3">
                   <Card.Title className="text-center">
                     Aksara Nglegena
                   </Card.Title>
@@ -36,7 +36,7 @@ const CategorySection = () => {
               </div>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="categoryWrapper">
             <Card className="categoryImage">
               <Image
                 src={Pasangan1Image}
@@ -44,7 +44,7 @@ const CategorySection = () => {
                 className="images"
               />
               <div>
-                <div className="p-2 m-2">
+                <div className="p-3 m-3">
                   <Card.Title className="text-center">
                     Pasangan Aksara Nglegena
                   </Card.Title>
@@ -57,11 +57,11 @@ const CategorySection = () => {
               </div>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="categoryWrapper">
             <Card className="categoryImage">
               <Image src={MurdaImage} alt="Aksara Murda" className="images" />
               <div>
-                <div className="p-2 m-2">
+                <div className="p-3 m-3">
                   <Card.Title className="text-center">Aksara Murda</Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
@@ -72,7 +72,7 @@ const CategorySection = () => {
               </div>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="categoryWrapper">
             <Card className="categoryImage">
               <Image
                 src={Pasangan2Image}
@@ -80,7 +80,7 @@ const CategorySection = () => {
                 className="images"
               />
               <div>
-                <div className="p-2 m-2">
+                <div className="p-3 m-3">
                   <Card.Title className="text-center">
                     Pasangan Aksara Murda
                   </Card.Title>
@@ -93,19 +93,38 @@ const CategorySection = () => {
               </div>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="categoryWrapper">
             <Card className="categoryImage">
               <Image
                 src={Sandhangan1Image}
-                alt="Sandhangan"
+                alt="Sandhangan I"
                 className="images"
               />
               <div>
-                <div className="p-2 m-2">
-                  <Card.Title className="text-center">Sandhangan</Card.Title>
+                <div className="p-3 m-3">
+                  <Card.Title className="text-center">Sandhangan I</Card.Title>
                 </div>
                 <div className=" p-1 m-1 text-center">
-                  <a href="/sandhangan" class="btn btn-custom">
+                  <a href="/sandhangan1" class="btn btn-custom">
+                    Mulai
+                  </a>
+                </div>
+              </div>
+            </Card>
+          </Col>
+          <Col md={4} className="categoryWrapper">
+            <Card className="categoryImage">
+              <Image
+                src={Sandhangan2Image}
+                alt="Sandhangan II"
+                className="images"
+              />
+              <div>
+                <div className="p-3 m-3">
+                  <Card.Title className="text-center">Sandhangan II</Card.Title>
+                </div>
+                <div className=" p-1 m-1 text-center">
+                  <a href="/sandhangan2" class="btn btn-custom">
                     Mulai
                   </a>
                 </div>

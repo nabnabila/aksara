@@ -1,4 +1,3 @@
-import { Container, Row, Col, Card, Image } from "react-bootstrap";
 import BelajarImage from "../assets/image/Belajar.png";
 import KuisImage from "../assets/image/Kuis.png";
 

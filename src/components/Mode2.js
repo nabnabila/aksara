@@ -10,7 +10,7 @@ const Mode2 = () => {
         <h1 className="p-10 m-5 text-center">Pasangan Aksara Nglegena</h1>
         <br />
         <Row>
-          <Col md={4} id="categories">
+          <Col md={6} className="categoryWrapper" id="categories">
             <Card className="modeImage">
               <Image src={BelajarImage} alt="Belajar" className="modeimages" />
               <div>
@@ -18,17 +18,14 @@ const Mode2 = () => {
                   <Card.Title className="text-center">Belajar</Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a
-                    href="/pasanganaksaranglegena/belajar2"
-                    class="btn btn-custom"
-                  >
+                  <a href="#" class="btn btn-custom">
                     Mulai
                   </a>
                 </div>
               </div>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col md={6} className="categoryWrapper">
             <Card className="modeImage">
               <Image src={KuisImage} alt="Kuis" className="modeimages" />
               <div>
@@ -36,24 +33,11 @@ const Mode2 = () => {
                   <Card.Title className="text-center">Kuis</Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a
-                    href="/pasanganaksaranglegena/kuis2"
-                    class="btn btn-custom"
-                  >
+                  <a href="#" class="btn btn-custom">
                     Mulai
                   </a>
                 </div>
               </div>
-            </Card>
-          </Col>
-          <Col md={4} className="categoryWrapper">
-            <Card className="modeImage1">
-              <a href="/">
-                <i
-                  className="bi bi-arrow-left"
-                  style={{ fontSize: "230px", color: "white" }}
-                ></i>{" "}
-              </a>
             </Card>
           </Col>
         </Row>
