@@ -1,0 +1,80 @@
+.bg {
+  height: 100vh;
+  background: url("../assets/image/bg.png");
+  background-size: cover;
+}
+
+.navbarBrand {
+  background-color: #c6553b;
+  padding: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.intro {
+  height: 60%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.title {
+  font-size: 5em;
+  font-weight: 700;
+  color: #000000;
+  text-shadow: 1px 1px 3px 3%;
+  line-height: 1.2;
+}
+
+.note {
+  font-size: 2em;
+  color: #000000;
+  text-shadow: 1px 1px 3px 3%;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.category {
+  height: 100vh;
+  background: url("../assets/image/bg2.png");
+  background-size: cover;
+}
+
+.categoryWrapper {
+}
+
+.categoryImage {
+  width: 375px;
+  height: 225px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.images {
+  width: 355px;
+  height: 200px;
+  padding: 10px;
+}
+.btn-custom {
+  color: #c6553b;
+}
+
+.mode {
+  height: 85vh;
+  background: url("../assets/image/bg3.png");
+}
+
+.modeImage {
+  width: 550px;
+  height: 500px;
+  margin: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modeimages {
+  width: 400px;
+  height: 275px;
+  padding: 20px;
+}
