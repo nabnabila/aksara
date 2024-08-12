@@ -33,7 +33,7 @@ const Mode6 = () => {
                   <Card.Title className="text-center">Kuis</Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="#" class="btn btn-custom">
+                  <a href="/kuis6" class="btn btn-custom">
                     Mulai
                   </a>
                 </div>

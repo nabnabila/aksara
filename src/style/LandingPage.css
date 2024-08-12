@@ -56,7 +56,8 @@
   padding: 10px;
 }
 .btn-custom {
-  color: #c6553b;
+  background-color: #c6553b !important;
+  color: #fff !important;
 }
 
 .mode {

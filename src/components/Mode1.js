@@ -7,7 +7,7 @@ const Mode1 = () => {
     <div className="mode">
       <Container>
         <br />
-        <h1 className="p-10 m-5 text-center">Aksara Ngelgena</h1>
+        <h1 className="p-10 m-5 text-center">Aksara Nglegena</h1>
         <br />
         <Row>
           <Col md={6} className="categoryWrapper" id="categories">
@@ -18,7 +18,7 @@ const Mode1 = () => {
                   <Card.Title className="text-center">Belajar</Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="#" class="btn btn-custom">
+                  <a href="/belajar1" class="btn btn-custom">
                     Mulai
                   </a>
                 </div>
@@ -33,7 +33,7 @@ const Mode1 = () => {
                   <Card.Title className="text-center">Kuis</Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="#" class="btn btn-custom">
+                  <a href="/Kuis1" class="btn btn-custom">
                     Mulai
                   </a>
                 </div>
