@@ -10,7 +10,7 @@ const Mode3 = () => {
         <h1 className="p-10 m-5 text-center">Aksara Murda</h1>
         <br />
         <Row>
-          <Col md={6} className="categoryWrapper" id="categories">
+          <Col md={6} id="categories">
             <Card className="modeImage">
               <Image src={BelajarImage} alt="Belajar" className="modeimages" />
               <div>
@@ -25,7 +25,7 @@ const Mode3 = () => {
               </div>
             </Card>
           </Col>
-          <Col md={6} className="categoryWrapper">
+          <Col md={6}>
             <Card className="modeImage">
               <Image src={KuisImage} alt="Kuis" className="modeimages" />
               <div>
