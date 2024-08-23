@@ -1,6 +1,6 @@
 import "../App.css"; // Adjust the path if necessary
 import NavigationBar from "../components/NavigationBar"; // Adjust the path if necessary
-import "../style/LandingPage.css"; // Adjust the path if necessary
+import "../style/CardCarousel.css"; // Adjust the path if necessary
 import IsiBelajar1 from "../components/IsiBelajar1"; // Adjust the path if necessary
 
 function Belajar1() {
@@ -11,7 +11,6 @@ function Belajar1() {
         <NavigationBar />
       </div>
       {/* end of intro section */}
-
       {/* category section */}
       <div>
         <IsiBelajar1 />

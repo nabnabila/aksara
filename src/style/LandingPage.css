@@ -40,9 +40,6 @@
   background-size: cover;
 }
 
-.categoryWrapper {
-}
-
 .categoryImage {
   width: 375px;
   height: 225px;
@@ -78,4 +75,16 @@
   width: 400px;
   height: 275px;
   padding: 20px;
+}
+
+/* crossword */
+.contain {
+  align-items: center;
+  justify-content: center;
+}
+
+.crossword {
+  padding: 10px;
+  width: 700px;
+  margin: auto;
 }

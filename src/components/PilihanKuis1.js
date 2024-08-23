@@ -67,7 +67,7 @@ const PilihanKuis1 = () => {
                   </Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/belajar1" class="btn btn-custom">
+                  <a href="/utakatikgathuknglegena" class="btn btn-custom">
                     Mulai
                   </a>
                 </div>
