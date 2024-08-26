@@ -27,7 +27,10 @@ const PilihanKuis3 = () => {
                   </Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/belajar1" class="btn btn-custom">
+                  <a
+                    href="/aksaramurda/kuis3/nggolekitembangmurda"
+                    class="btn btn-custom"
+                  >
                     Mulai
                   </a>
                 </div>
@@ -46,7 +49,10 @@ const PilihanKuis3 = () => {
                   <Card.Title className="text-center">Ngatur Ukara</Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/belajar1" class="btn btn-custom">
+                  <a
+                    href="/aksaramurda/kuis3/ngaturukaramurda"
+                    class="btn btn-custom"
+                  >
                     Mulai
                   </a>
                 </div>
@@ -67,7 +73,10 @@ const PilihanKuis3 = () => {
                   </Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/belajar1" class="btn btn-custom">
+                  <a
+                    href="/aksaramurda/kuis3/utakatikgathukmurda"
+                    class="btn btn-custom"
+                  >
                     Mulai
                   </a>
                 </div>
@@ -88,7 +97,10 @@ const PilihanKuis3 = () => {
                   </Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/belajar1" class="btn btn-custom">
+                  <a
+                    href="/aksaramurda/kuis3/nyocokakegambarmurda"
+                    class="btn btn-custom"
+                  >
                     Mulai
                   </a>
                 </div>
@@ -109,7 +121,10 @@ const PilihanKuis3 = () => {
                   </Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/Kuis1" class="btn btn-custom">
+                  <a
+                    href="/aksaramurda/kuis3/nyocokakeswara"
+                    class="btn btn-custom"
+                  >
                     Mulai
                   </a>
                 </div>

@@ -18,7 +18,7 @@ const Mode5 = () => {
                   <Card.Title className="text-center">Belajar</Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/belajar5" class="btn btn-custom">
+                  <a href="/sandhangan/belajar5" class="btn btn-custom">
                     Mulai
                   </a>
                 </div>
@@ -33,7 +33,7 @@ const Mode5 = () => {
                   <Card.Title className="text-center">Kuis</Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/kuis5" class="btn btn-custom">
+                  <a href="/sandhangan/kuis5" class="btn btn-custom">
                     Mulai
                   </a>
                 </div>

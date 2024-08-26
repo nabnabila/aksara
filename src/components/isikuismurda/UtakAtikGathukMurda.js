@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Crossword from "@jaredreisinger/react-crossword";
 import { useNavigate } from "react-router-dom";
 
@@ -26,7 +26,7 @@ const data = {
     },
   },
 };
-export default function UtakAtikGathukNglegena() {
+export default function UtakAtikGathukMurda() {
   const [isCorrect, setIsCorrect] = useState(false);
   const navigate = useNavigate();
 
@@ -35,13 +35,13 @@ export default function UtakAtikGathukNglegena() {
   };
 
   const handleNextPage = () => {
-    navigate("/aksaranglegena/kuis1/nyocokakegambarnglegena");
+    navigate("/aksaramurda/kuis3/nyocokakegambarmurda");
   };
 
   return (
     <div className="contain">
       <br />
-      <h1 className="p-20 m-5 text-center">Utak Atik Gathuk Nglegena</h1>
+      <h1 className="p-20 m-5 text-center">Utak Atik Gathuk Murda</h1>
       <br />
       <div className="crossword">
         <Crossword data={data} onCrosswordCorrect={handleCrosswordCorrect} />

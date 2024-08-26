@@ -27,4 +27,5 @@ button {
   color: #fff;
   border-radius: 3px;
   cursor: pointer;
+  align-items: center;
 }

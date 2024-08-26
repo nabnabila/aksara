@@ -1,0 +1,60 @@
+/* Container styling */
+.clue-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.clue-container h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+.clue-image {
+  max-width: 200px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 175px;
+  max-height: 175x;
+  margin: 10px;
+  border: 2px #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.feedback-message {
+  font-size: 25px;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.next-button {
+  background-color: #c6553b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.next-button:hover {
+  background-color: #95a5a6;
+}

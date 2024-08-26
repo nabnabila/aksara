@@ -5,11 +5,10 @@ import contohha from "../../assets/image/aksara1/contohha.png";
 import contohna from "../../assets/image/aksara1/contohna.png";
 import contohca from "../../assets/image/aksara1/contohca.png";
 import contohra from "../../assets/image/aksara1/contohra.png";
-const SwaraNglegena = () => {
+const SwaraSandhangan = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [feedback, setFeedback] = useState("");
-  const [showHomeButton, setShowHomeButton] = useState(false);
   const navigate = useNavigate();
 
   // audio data
@@ -44,9 +43,11 @@ const SwaraNglegena = () => {
       setFeedback("Coba Maneh Yok!");
     }
   };
+
   const goToHomePage = () => {
-    navigate("/aksaranglegena/kuis1");
+    navigate("/sandhangan/kuis5");
   };
+
   return (
     <div className="sound-match-game">
       <h1>Nyocokake Swara Nglegena</h1>
@@ -84,4 +85,4 @@ const SwaraNglegena = () => {
   );
 };
 
-export default SwaraNglegena;
+export default SwaraSandhangan;

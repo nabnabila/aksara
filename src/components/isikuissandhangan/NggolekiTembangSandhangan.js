@@ -131,12 +131,12 @@ const NggolekiTembang = () => {
   const allWordsFound = foundWords.length === clues.length;
 
   const goToNextPage = () => {
-    navigate("/aksaranglegena/kuis1/ngaturukaranglegena");
+    navigate("/Sandhangan/kuis5/ngaturukarasandhangan");
   };
 
   return (
     <div className="wordsearch">
-      <h1>Nggoleki Tembang Nglegena</h1>
+      <h1>Nggoleki Tembang Sandhangan</h1>
 
       <div className="wordsearch-clues">
         {clues.map((clue, index) => (

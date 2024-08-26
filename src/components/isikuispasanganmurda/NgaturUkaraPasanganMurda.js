@@ -66,12 +66,12 @@ function NgaturUkara() {
 
   // Navigate to the next page
   function goToNextPage() {
-    navigate("/aksaranglegena/kuis1/utakatikgathuknglegena"); // Use navigate instead of history.push
+    navigate("/pasanganaksaramurda/kuis4/utakatikgathukpasanganmurda"); // Use navigate instead of history.push
   }
 
   return (
     <div className="arrangewords">
-      <h1>Ngatur Ukara Nglegena</h1>
+      <h1>Ngatur Ukara Pasangan Aksara Murda</h1>
       <p className="question-text">{question}</p> {/* Styled question */}
       <div className="arrangewords-image-list">
         {shuffledImages.map((image, index) => (

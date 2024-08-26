@@ -1,0 +1,11 @@
+.contain {
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/image/bg3.png");
+}
+
+.crossword {
+  padding: 5px;
+  width: 500px;
+  margin: auto;
+}

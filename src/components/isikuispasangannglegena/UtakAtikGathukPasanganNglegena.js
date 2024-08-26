@@ -1,5 +1,6 @@
 import React from "react";
 import Crossword from "@jaredreisinger/react-crossword";
+import { useNavigate } from "react-router-dom";
 
 const data = {
   across: {
@@ -26,17 +27,35 @@ const data = {
   },
 };
 
-export default function UtakAtikGathukNglegena() {
+export default function UtakAtikGathukPasanganNglegena() {
+  const [isCorrect, setIsCorrect] = useState(false);
+  const navigate = useNavigate();
+
+  const handleCrosswordCorrect = () => {
+    setIsCorrect(true);
+  };
+
+  const handleNextPage = () => {
+    navigate("/pasanganaaksaranglegena/kuis2/nyocokakegambarpasangannglegena");
+  };
+
   return (
-    <div className="mode">
-      <div className="contain">
-        <br />
-        <h1 className="p-20 m-5 text-center">Utak Atik Gathuk Nglegena</h1>
-        <br />
-        <div className="crossword">
-          <Crossword data={data} />
-        </div>
+    <div className="contain">
+      <br />
+      <h1 className="p-20 m-5 text-center">
+        Utak Atik Gathuk Pasangan Aksara Nglegena
+      </h1>
+      <br />
+      <div className="crossword">
+        <Crossword data={data} onCrosswordCorrect={handleCrosswordCorrect} />
       </div>
+      {isCorrect && (
+        <div className="text-center">
+          <button onClick={handleNextPage} className="btn btn-primary mt-4">
+            Next Page
+          </button>
+        </div>
+      )}
     </div>
   );
 }

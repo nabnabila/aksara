@@ -131,7 +131,7 @@ const NggolekiTembang = () => {
   const allWordsFound = foundWords.length === clues.length;
 
   const goToNextPage = () => {
-    navigate("/aksaranglegena/kuis1/ngaturukaranglegena");
+    navigate("/aksaramurda/kuis3/ngaturukaramurda");
   };
 
   return (

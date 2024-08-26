@@ -1,6 +1,6 @@
 import UtakAtikGathukNglegena from "../../components/isikuisnglegena/UtakAtikGathukNglegena";
 import "../../App.css"; // Adjust the path if necessary
-import "../../style/LandingPage.css";
+import "../../style/Crossword.css";
 import NavigationBar from "../../components/NavigationBar";
 function IsiKuis3A() {
   return (

@@ -1,7 +1,7 @@
-import UtakAtikGathukNglegena from "../../components/isikuisnglegena/UtakAtikGathukNglegena";
 import "../../App.css"; // Adjust the path if necessary
-import "../../style/LandingPage.css";
+import "../../style/Crossword.css";
 import NavigationBar from "../../components/NavigationBar";
+import UtakAtikGathukMurda from "../../components/isikuismurda/UtakAtikGathukMurda";
 function IsiKuis3() {
   return (
     <div>
@@ -13,7 +13,7 @@ function IsiKuis3() {
 
       {/* mode */}
       <div>
-        <UtakAtikGathukNglegena />
+        <UtakAtikGathukMurda />
       </div>
       {/* mode */}
     </div>

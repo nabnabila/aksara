@@ -27,7 +27,10 @@ const PilihanKuis4 = () => {
                   </Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/belajar1" class="btn btn-custom">
+                  <a
+                    href="/pasanganaksaramurda/kuis4/nggolekitembangpasanganmurda"
+                    class="btn btn-custom"
+                  >
                     Mulai
                   </a>
                 </div>
@@ -46,7 +49,10 @@ const PilihanKuis4 = () => {
                   <Card.Title className="text-center">Ngatur Ukara</Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/belajar1" class="btn btn-custom">
+                  <a
+                    href="/pasanganaksaramurda/kuis4/ngaturukarapasanganmurda"
+                    class="btn btn-custom"
+                  >
                     Mulai
                   </a>
                 </div>
@@ -67,7 +73,10 @@ const PilihanKuis4 = () => {
                   </Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/belajar1" class="btn btn-custom">
+                  <a
+                    href="/pasanganaksaramurda/kuis4/utakatikgathukpasanganmurda"
+                    class="btn btn-custom"
+                  >
                     Mulai
                   </a>
                 </div>
@@ -88,7 +97,10 @@ const PilihanKuis4 = () => {
                   </Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/belajar1" class="btn btn-custom">
+                  <a
+                    href="/pasanganaksaramurda/kuis4/nyocokakegambarpasanganmurda"
+                    class="btn btn-custom"
+                  >
                     Mulai
                   </a>
                 </div>
@@ -109,7 +121,10 @@ const PilihanKuis4 = () => {
                   </Card.Title>
                 </div>
                 <div className="p-1 m-1 text-center">
-                  <a href="/Kuis1" class="btn btn-custom">
+                  <a
+                    href="/pasanganaksaramurda/kuis4/nyocokakeswara"
+                    class="btn btn-custom"
+                  >
                     Mulai
                   </a>
                 </div>
