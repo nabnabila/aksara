@@ -185,6 +185,8 @@ const NggolekiTembang = () => {
           )}
         </div>
       </div>
+
+      <button onClick={clearSelection}>Clear Selection</button>
     </div>
   );
 };
