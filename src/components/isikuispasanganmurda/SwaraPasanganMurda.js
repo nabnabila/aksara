@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ho from "../../assets/audio/audio1/ho.mp3";
+import glb from "../../assets/audio/kuis/garenglanbagong.mp3";
 import contohha from "../../assets/image/aksara1/contohha.png";
 import contohna from "../../assets/image/aksara1/contohna.png";
 import contohca from "../../assets/image/aksara1/contohca.png";
@@ -9,11 +9,12 @@ const SwaraPasanganMurda = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [feedback, setFeedback] = useState("");
+  const [showHomeButton, setShowHomeButton] = useState(false);
   const navigate = useNavigate();
 
   // audio data
   const song = {
-    audioSrc: ho,
+    audioSrc: glb,
     correctAnswer: "option2",
     options: [
       { id: "option1", imgSrc: contohha },

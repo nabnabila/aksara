@@ -21,6 +21,11 @@ import IsiKuis1B from "./Pages/IsiKuisPasanganNglegena/IsiKuis1";
 import IsiKuis1C from "./Pages/IsiKuisMurda/IsiKuis1";
 import IsiKuis1D from "./Pages/IsiKuisPasanganMurda/IsiKuis1";
 import IsiKuis1E from "./Pages/IsiKuisSandhangan/IsiKuis1";
+import IsiKuis2A from "./Pages/IsiKuisNglegena/IsiKuis2";
+import IsiKuis2C from "./Pages/IsiKuisMurda/IsiKuis2";
+import IsiKuis2B from "./Pages/IsiKuisPasanganNglegena/IsiKuis2";
+import IsiKuis2D from "./Pages/IsiKuisPasanganMurda/IsiKuis2";
+import IsiKuis2E from "./Pages/IsiKuisSandhangan/IsiKuis2";
 import IsiKuis3A from "./Pages/IsiKuisNglegena/IsiKuis3";
 import IsiKuis3B from "./Pages/IsiKuisPasanganNglegena/IsiKuis3";
 import IsiKuis3C from "./Pages/IsiKuisMurda/IsiKuis3";
@@ -37,11 +42,6 @@ import IsiKuis5C from "./Pages/IsiKuisMurda/IsiKuis5";
 import IsiKuis5D from "./Pages/IsiKuisPasanganMurda/IsiKuis5";
 import IsiKuis5E from "./Pages/IsiKuisSandhangan/IsiKuis5";
 import { Route, Routes } from "react-router-dom";
-import IsiKuis2A from "./Pages/IsiKuisNglegena/IsiKuis2";
-import IsiKuis2C from "./Pages/IsiKuisPasanganNglegena/IsiKuis2";
-import IsiKuis2B from "./Pages/IsiKuisPasanganNglegena/IsiKuis2";
-import IsiKuis2D from "./Pages/IsiKuisPasanganMurda/IsiKuis2";
-import IsiKuis2E from "./Pages/IsiKuisSandhangan/IsiKuis2";
 
 function App() {
   return (

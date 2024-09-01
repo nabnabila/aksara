@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ho from "../../assets/audio/audio1/ho.mp3";
-import contohha from "../../assets/image/aksara1/contohha.png";
-import contohna from "../../assets/image/aksara1/contohna.png";
-import contohca from "../../assets/image/aksara1/contohca.png";
-import contohra from "../../assets/image/aksara1/contohra.png";
+import pg from "../../assets/audio/kuis/pagelaranwayang.mp3";
+import pg1 from "../../assets/image/kuis/pg1.png";
+import pg2 from "../../assets/image/kuis/pg2.png";
+import pg3 from "../../assets/image/kuis/pg3.png";
+import pg4 from "../../assets/image/kuis/pg4.png";
+
 const SwaraNglegena = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -14,13 +15,13 @@ const SwaraNglegena = () => {
 
   // audio data
   const song = {
-    audioSrc: ho,
-    correctAnswer: "option2",
+    audioSrc: pg,
+    correctAnswer: "option4",
     options: [
-      { id: "option1", imgSrc: contohha },
-      { id: "option2", imgSrc: contohca },
-      { id: "option3", imgSrc: contohna },
-      { id: "option4", imgSrc: contohra },
+      { id: "option1", imgSrc: pg2 },
+      { id: "option2", imgSrc: pg3 },
+      { id: "option3", imgSrc: pg4 },
+      { id: "option4", imgSrc: pg1 },
     ],
   };
 

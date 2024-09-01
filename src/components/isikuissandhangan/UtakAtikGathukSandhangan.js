@@ -1,33 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import Crossword from "@jaredreisinger/react-crossword";
 import { useNavigate } from "react-router-dom";
+import ketoprak from "../../assets/image/kuis/ketropak.png";
+import janger from "../../assets/image/kuis/janger.png";
+import wayang from "../../assets/image/kuis/waayang.png";
+import lerok from "../../assets/image/kuis/lerok.png";
+import ludruk from "../../assets/image/kuis/ludruk.png";
+import "../../style/Crossword.css";
 
 const data = {
   across: {
-    1: {
-      clue: "one plus one",
-      answer: "TWO",
-      row: 0,
+    3: {
+      clue: "GAMBAR 3", // Placeholder clue
+      answer: "WAYANG",
+      row: 5,
       col: 0,
     },
-    3: {
-      clue: "five plus three",
-      answer: "EIGHT",
-      row: 2,
+    4: {
+      clue: "GAMBAR 4", // Placeholder clue
+      answer: "LUDRUK",
+      row: 7,
       col: 2,
     },
   },
   down: {
-    2: {
-      clue: "three minus two",
-      answer: "ONE",
+    1: {
+      clue: "GAMBAR 1", // Placeholder clue
+      answer: "KETOPRAK",
       row: 0,
+      col: 7,
+    },
+    2: {
+      clue: "GAMBAR 2", // Placeholder clue
+      answer: "JANGER",
+      row: 2,
+      col: 5,
+    },
+    4: {
+      clue: "GAMBAR 4", // Placeholder clue
+      answer: "LEROK",
+      row: 7,
       col: 2,
     },
   },
 };
 
-export default function UtakAtikGathukSandhangan() {
+export default function UtakAtikGathukMurda() {
   const [isCorrect, setIsCorrect] = useState(false);
   const navigate = useNavigate();
 
@@ -40,12 +58,38 @@ export default function UtakAtikGathukSandhangan() {
   };
 
   return (
-    <div className="contain">
-      <br />
+    <div className="crossword-contain">
       <h1 className="p-20 m-5 text-center">Utak Atik Gathuk Sandhangan</h1>
-      <br />
-      <div className="crossword">
-        <Crossword data={data} onCrosswordCorrect={handleCrosswordCorrect} />
+      <div className="crossword-game-container">
+        <div className="crossword">
+          <Crossword data={data} onCrosswordCorrect={handleCrosswordCorrect} />
+        </div>
+        <div className="crossword-clues-with-images">
+          <div className="crossword-clue">
+            <img
+              src={ketoprak}
+              alt="Ketoprak"
+              className="crossword-clue-image"
+            />{" "}
+            <span>1 Down</span>
+          </div>
+          <div className="crossword-clue">
+            <img src={janger} alt="Janger" className="crossword-clue-image" />{" "}
+            <span>2 Down</span>
+          </div>
+          <div className="crossword-clue">
+            <img src={wayang} alt="Wayang" className="crossword-clue-image" />{" "}
+            <span>3 Across</span>
+          </div>
+          <div className="crossword-clue">
+            <img src={lerok} alt="lerok" className="crossword-clue-image" />{" "}
+            <span>4 Down</span>
+          </div>
+          <div className="crossword-clue">
+            <img src={ludruk} alt="ludruk" className="crossword-clue-image" />{" "}
+            <span>4 Across</span>
+          </div>
+        </div>
       </div>
       {isCorrect && (
         <div className="text-center">

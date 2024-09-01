@@ -1,25 +1,27 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ho from "../../assets/audio/audio1/ho.mp3";
-import contohha from "../../assets/image/aksara1/contohha.png";
-import contohna from "../../assets/image/aksara1/contohna.png";
-import contohca from "../../assets/image/aksara1/contohca.png";
-import contohra from "../../assets/image/aksara1/contohra.png";
+import tr from "../../assets/audio/kuis/teaterrakyat.mp3";
+import tr1 from "../../assets/image/kuis/tr1.png";
+import tr2 from "../../assets/image/kuis/tr2.png";
+import tr3 from "../../assets/image/kuis/tr3.png";
+import tr4 from "../../assets/image/kuis/tr4.png";
+
 const SwaraSandhangan = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [feedback, setFeedback] = useState("");
+  const [showHomeButton, setShowHomeButton] = useState(false);
   const navigate = useNavigate();
 
   // audio data
   const song = {
-    audioSrc: ho,
+    audioSrc: tr,
     correctAnswer: "option2",
     options: [
-      { id: "option1", imgSrc: contohha },
-      { id: "option2", imgSrc: contohca },
-      { id: "option3", imgSrc: contohna },
-      { id: "option4", imgSrc: contohra },
+      { id: "option1", imgSrc: tr2 },
+      { id: "option2", imgSrc: tr1 },
+      { id: "option3", imgSrc: tr3 },
+      { id: "option4", imgSrc: tr4 },
     ],
   };
 

@@ -1,24 +1,23 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
-import ha from "../../assets/image/aksara1/contohha.png";
-import na from "../../assets/image/aksara1/contohna.png";
-import ca from "../../assets/image/aksara1/contohca.png";
-import ra from "../../assets/image/aksara1/contohra.png";
-import ka from "../../assets/image/aksara1/contohka.png";
+import pg from "../../assets/image/kuis/petrukgareng.png";
+import pg1 from "../../assets/image/kuis/petrukgareng1.png";
+import gb from "../../assets/image/kuis/garengbagong.png";
+import sg from "../../assets/image/kuis/semargareng.png";
+import sp from "../../assets/image/kuis/semarpetruk.png";
+import "../../style/ImageMatch.css";
 
 const NyocokakeGambar = ({ nextPagePath }) => {
-  // Accept nextPagePath as a prop
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
-  // Define the pairs with an image as the clue
   const pairs = [
     {
-      clueImage: ha,
+      clueImage: pg1,
       options: [
-        { id: 1, image: na, isCorrect: true },
-        { id: 2, image: ca, isCorrect: false },
-        { id: 3, image: ra, isCorrect: false },
-        { id: 4, image: ka, isCorrect: false },
+        { id: 1, image: gb, isCorrect: false },
+        { id: 2, image: pg, isCorrect: true },
+        { id: 3, image: sg, isCorrect: false },
+        { id: 4, image: sp, isCorrect: false },
       ],
     },
   ];
@@ -29,30 +28,34 @@ const NyocokakeGambar = ({ nextPagePath }) => {
 
   const currentPair = pairs[currentPairIndex];
 
-  // Handle the selection of an image
   const handleImageClick = (option) => {
     setSelectedImage(option.id);
     setIsAnswerCorrect(option.isCorrect);
   };
 
-  // Handle moving to the next question or page
   const handleNext = () => {
     if (currentPairIndex < pairs.length - 1) {
       setSelectedImage(null);
       setIsAnswerCorrect(null);
       setCurrentPairIndex(currentPairIndex + 1);
     } else {
-      // Navigate to the path provided in nextPagePath prop
       navigate(nextPagePath);
     }
   };
 
   return (
-    <div className="mode">
-      <div className="clue-container">
-        <h1>Pilihlah gambar yang sesuai dengan</h1>
-        <img src={currentPair.clueImage} alt="Clue" className="clue-image" />
-        <div className="image-container">
+    <div className="image-cover">
+      <div className="image-clue-container">
+        <h1 className="image-clue-container-header">Nyocokake Gambar</h1>
+        <h2 className="image-clue-container-header1">
+          Pilih gambar sing cocog karo aksara
+        </h2>
+        <img
+          src={currentPair.clueImage}
+          alt="Clue"
+          className="image-clue-image"
+        />
+        <div className="option-image-container">
           {currentPair.options.map((option) => (
             <img
               key={option.id}
@@ -73,7 +76,7 @@ const NyocokakeGambar = ({ nextPagePath }) => {
               {isAnswerCorrect ? "Bener!" : "Coba Maneh Yok!"}
             </p>
             {isAnswerCorrect && (
-              <button className="next-button" onClick={handleNext}>
+              <button className="image-next-button" onClick={handleNext}>
                 Next
               </button>
             )}

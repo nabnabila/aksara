@@ -1,15 +1,20 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import contohta from "../../assets/image/aksara1/contohta.png";
-import contohca from "../../assets/image/aksara1/contohca.png";
-import contohga from "../../assets/image/aksara1/contohga.png";
+import { useNavigate } from "react-router-dom";
+import eb1 from "../../assets/image/kuis/empritabuntutbedhug1.png";
+import eb2 from "../../assets/image/kuis/empritabuntutbedhug2.png";
+import eb3 from "../../assets/image/kuis/empritabuntutbedhug3.png";
+import eb4 from "../../assets/image/kuis/empritabuntutbedhug4.png";
+import eb5 from "../../assets/image/kuis/empritabuntutbedhug5.png";
+import eb6 from "../../assets/image/kuis/empritabuntutbedhug6.png";
 
-// Example question and images
-const question = "Atur Kata dengan benar";
+const question = "Tatanen aksarane supaya dadi tembung 'Emprit Abuntut Bedhug'";
 const images = [
-  { id: 1, src: contohca, isCorrect: true },
-  { id: 2, src: contohga, isCorrect: true },
-  { id: 3, src: contohta, isCorrect: false },
+  { id: 1, src: eb1, isCorrect: true },
+  { id: 2, src: eb2, isCorrect: true },
+  { id: 3, src: eb3, isCorrect: true },
+  { id: 4, src: eb4, isCorrect: false },
+  { id: 5, src: eb5, isCorrect: false },
+  { id: 6, src: eb6, isCorrect: false },
 ];
 
 function NgaturUkara() {
@@ -71,8 +76,12 @@ function NgaturUkara() {
 
   return (
     <div className="arrangewords">
-      <h1>Ngatur Ukara PAsangan Aksara Nglegena</h1>
-      <p className="question-text">{question}</p> {/* Styled question */}
+      <h1 className="arrangewords-header">
+        {" "}
+        Ngatur Ukara PAsangan Aksara Nglegena
+      </h1>
+      <p className="arrangewords-question-text">{question}</p>{" "}
+      {/* Styled question */}
       <div className="arrangewords-image-list">
         {shuffledImages.map((image, index) => (
           <img

@@ -1,31 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import Crossword from "@jaredreisinger/react-crossword";
 import { useNavigate } from "react-router-dom";
+import br from "../../assets/image/kuis/brahmandapurana.png";
+import bh from "../../assets/image/kuis/bhismaparwa.png";
+import pr from "../../assets/image/kuis/prasthanikaparwa.png";
+import ku from "../../assets/image/kuis/kunjarakarna.png";
+import sa from "../../assets/image/kuis/sabhaparwa.png";
+import "../../style/Crossword.css"; // Assuming you have a CSS file for custom styles
 
 const data = {
   across: {
     1: {
-      clue: "one plus one",
-      answer: "TWO",
+      clue: "GAMBAR 1", // Placeholder clue
+      answer: "SABHAPARWA",
       row: 0,
+      col: 8,
+    },
+    4: {
+      clue: "GAMBAR 4", // Placeholder clue
+      answer: "KUNJARAKARNA",
+      row: 6,
       col: 0,
     },
-    3: {
-      clue: "five plus three",
-      answer: "EIGHT",
-      row: 2,
-      col: 2,
+    5: {
+      clue: "GAMBAR 5", // Placeholder clue
+      answer: "PRASTHANIKAPARWA",
+      row: 12,
+      col: 0,
     },
   },
   down: {
     2: {
-      clue: "three minus two",
-      answer: "ONE",
+      clue: "GAMBAR 2", // Placeholder clue
+      answer: "BRAHMANDAPURANA",
       row: 0,
-      col: 2,
+      col: 10,
+    },
+    3: {
+      clue: "GAMBAR 3", // Placeholder clue
+      answer: "BHISMAPARWA",
+      row: 4,
+      col: 13,
     },
   },
 };
+
 export default function UtakAtikGathukMurda() {
   const [isCorrect, setIsCorrect] = useState(false);
   const navigate = useNavigate();
@@ -39,12 +58,42 @@ export default function UtakAtikGathukMurda() {
   };
 
   return (
-    <div className="contain">
-      <br />
+    <div className="crossword-contain">
       <h1 className="p-20 m-5 text-center">Utak Atik Gathuk Murda</h1>
-      <br />
-      <div className="crossword">
-        <Crossword data={data} onCrosswordCorrect={handleCrosswordCorrect} />
+      <div className="crossword-game-container">
+        <div className="crossword">
+          <Crossword data={data} onCrosswordCorrect={handleCrosswordCorrect} />
+        </div>
+        <div className="crossword-clues-with-images">
+          <div className="crossword-clue">
+            <img src={sa} alt="Sabhaparwa" className="crossword-clue-image" />{" "}
+            <span>1 Across</span>
+          </div>
+          <div className="crossword-clue">
+            <img
+              src={br}
+              alt="Brahmandapurana"
+              className="crossword-clue-image"
+            />{" "}
+            <span>2 Down</span>
+          </div>
+          <div className="crossword-clue">
+            <img src={bh} alt="Bhismaparwa" className="crossword-clue-image" />{" "}
+            <span>3 Down</span>
+          </div>
+          <div className="crossword-clue">
+            <img src={ku} alt="Kunjarakarna" className="crossword-clue-image" />{" "}
+            <span>4 Across</span>
+          </div>
+          <div className="crossword-clue">
+            <img
+              src={pr}
+              alt="Prasthanikaparwa"
+              className="crossword-clue-image"
+            />{" "}
+            <span>5 Across</span>
+          </div>
+        </div>
       </div>
       {isCorrect && (
         <div className="text-center">

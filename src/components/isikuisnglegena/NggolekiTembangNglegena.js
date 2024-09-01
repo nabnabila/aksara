@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import contohta from "../../assets/image/aksara1/contohta.png";
-import contohca from "../../assets/image/aksara1/contohca.png";
-import contohga from "../../assets/image/aksara1/contohga.png";
-
+import alur from "../../assets/image/kuis/alur.png";
+import tema from "../../assets/image/kuis/tema.png";
+import paraga from "../../assets/image/kuis/paraga.png";
+import latar from "../../assets/image/kuis/latar.png";
 const NggolekiTembang = () => {
   const initialClues = [
-    { word: "TARI", image: contohta },
-    { word: "MACA", image: contohca },
-    { word: "GAWA", image: contohga },
+    { word: "TEMA", image: tema },
+    { word: "PARAGA", image: paraga },
+    { word: "ALUR", image: alur },
+    { word: "LATAR", image: latar },
   ];
 
-  const gridSize = 10;
+  const [gridSize, setGridSize] = useState(15);
   const [grid, setGrid] = useState([]);
   const [foundWords, setFoundWords] = useState([]);
   const [selectedCells, setSelectedCells] = useState([]);
@@ -92,7 +93,7 @@ const NggolekiTembang = () => {
     placeWordsInGrid(newGrid);
     fillGridWithRandomLetters(newGrid);
     setGrid(newGrid);
-  }, [clues]);
+  }, [clues, gridSize]);
 
   // Handle user selection of cells
   const handleCellClick = (row, col) => {
@@ -136,18 +137,24 @@ const NggolekiTembang = () => {
 
   return (
     <div className="wordsearch">
-      <h1>Nggoleki Tembang Nglegena</h1>
+      <h1>Nggoleki Tembung Nglegena</h1>
+      <h2>Goleki tembung sing cocog karo aksara sing ditampilake</h2>
 
       <div className="wordsearch-clues">
         {clues.map((clue, index) => (
-          <div key={index} className="clue">
-            <img src={clue.image} alt={clue.word} style={{ width: "50px" }} />
+          <div key={index} className="wordsearch-clue">
+            <img
+              className="wordsearch-clue-image"
+              src={clue.image}
+              alt={clue.word}
+              style={{ width: "20px" }}
+            />
           </div>
         ))}
       </div>
 
       <div className="wordsearch-container">
-        <div className="wordsearch-grid">
+        <div className="wordsearch-grid" style={{ "--grid-size": gridSize }}>
           {grid.map((row, rowIndex) => (
             <div key={rowIndex} className="wordsearch-row">
               {row.map((letter, colIndex) => (
@@ -169,21 +176,25 @@ const NggolekiTembang = () => {
           ))}
         </div>
 
+        <button onClick={clearSelection}>Clear Selection</button>
         <div className="wordsearch-found-words">
-          <h2>Kata:</h2>
+          <h2>Tembung:</h2>
           {foundWords.map((word, index) => (
-            <div key={index}>{word}</div>
+            <span key={index} style={{ marginRight: "10px" }}>
+              {word}
+            </span>
           ))}
 
           {allWordsFound && (
-            <button onClick={goToNextPage} className="next-page-button">
+            <button
+              onClick={goToNextPage}
+              className="wordsearch-next-page-button"
+            >
               Next Page
             </button>
           )}
         </div>
       </div>
-
-      <button onClick={clearSelection}>Clear Selection</button>
     </div>
   );
 };

@@ -1,33 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import Crossword from "@jaredreisinger/react-crossword";
 import { useNavigate } from "react-router-dom";
+import bn from "../../assets/image/kuis/bondannusantara.png";
+import pt from "../../assets/image/kuis/pangerantimur.png";
+import kt from "../../assets/image/kuis/ketopraktobong.png";
+import "../../style/Crossword.css";
 
 const data = {
   across: {
-    1: {
-      clue: "one plus one",
-      answer: "TWO",
-      row: 0,
-      col: 0,
+    2: {
+      clue: "GAMBAR 2", // Placeholder clue
+      answer: "PANGERANTIMUR",
+      row: 5,
+      col: 4,
     },
     3: {
-      clue: "five plus three",
-      answer: "EIGHT",
-      row: 2,
-      col: 2,
+      clue: "GAMBAR 3", // Placeholder clue
+      answer: "KETOPRAKTOBONG",
+      row: 9,
+      col: 0,
     },
   },
   down: {
-    2: {
-      clue: "three minus two",
-      answer: "ONE",
-      row: 0,
-      col: 2,
+    1: {
+      clue: "GAMBAR 1", // Placeholder clue
+      answer: "BONDANNUSANTARA",
+      row: 9,
+      col: 0,
     },
   },
 };
 
-export default function UtakAtikGathukPasanganMurda() {
+export default function UtakAtikGathukNglegena() {
   const [isCorrect, setIsCorrect] = useState(false);
   const navigate = useNavigate();
 
@@ -36,18 +40,42 @@ export default function UtakAtikGathukPasanganMurda() {
   };
 
   const handleNextPage = () => {
-    navigate("/aksarapasanganmurda/kuis4/nyocokakegambarpasanganmurda");
+    navigate("/pasanganaksaramurda/kuis4/nyocokakegambarpasanganmurda");
   };
 
   return (
-    <div className="contain">
-      <br />
-      <h1 className="p-20 m-5 text-center">
-        Utak Atik Gathuk Pasangan Aksara Murda
-      </h1>
-      <br />
-      <div className="crossword">
-        <Crossword data={data} onCrosswordCorrect={handleCrosswordCorrect} />
+    <div className="crossword-contain">
+      <h1 className="p-20 m-5 text-center">Utak Atik Gathuk Nglegena</h1>
+      <div className="crossword-game-container">
+        <div className="crossword-crossword">
+          <Crossword data={data} onCrosswordCorrect={handleCrosswordCorrect} />
+        </div>
+        <div className="crossword-clues-with-images">
+          <div className="crossword-clue">
+            <img
+              src={bn}
+              alt="BondanNusantara"
+              className="crossword-clue-image"
+            />{" "}
+            <span>GAMBAR 1</span>
+          </div>
+          <div className="crossword-clue">
+            <img
+              src={pt}
+              alt="PangeranTimur"
+              className="crossword-clue-image"
+            />{" "}
+            <span>GAMBAR 2</span>
+          </div>
+          <div className="crossword-clue">
+            <img
+              src={kt}
+              alt="KetoprakTobong"
+              className="crossword-clue-image"
+            />{" "}
+            <span>GAMBAR 3</span>
+          </div>
+        </div>
       </div>
       {isCorrect && (
         <div className="text-center">

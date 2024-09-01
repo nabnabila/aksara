@@ -1,33 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import Crossword from "@jaredreisinger/react-crossword";
 import { useNavigate } from "react-router-dom";
+import punjering from "../../assets/image/kuis/punjering.png";
+import cerkak from "../../assets/image/kuis/cerkak.png";
+import cembung from "../../assets/image/kuis/cembung.png";
+import swara from "../../assets/image/kuis/swara.png";
+import waktu from "../../assets/image/kuis/waktu.png";
+import "../../style/Crossword.css"; // Assuming you have a CSS file for custom styles
 
 const data = {
   across: {
-    1: {
-      clue: "one plus one",
-      answer: "TWO",
-      row: 0,
-      col: 0,
+    2: {
+      clue: "GAMBAR 2", // Placeholder clue
+      answer: "CEMBUNG",
+      row: 4,
+      col: 7,
     },
-    3: {
-      clue: "five plus three",
-      answer: "EIGHT",
-      row: 2,
-      col: 2,
+    4: {
+      clue: "GAMBAR 4", // Placeholder clue
+      answer: "PUNJERING",
+      row: 9,
+      col: 0,
     },
   },
   down: {
-    2: {
-      clue: "three minus two",
-      answer: "ONE",
+    1: {
+      clue: "GAMBAR 1", // Placeholder clue
+      answer: "SWARA",
       row: 0,
-      col: 2,
+      col: 11,
+    },
+    2: {
+      clue: "GAMBAR 2", // Placeholder clue
+      answer: "CERKAK",
+      row: 4,
+      col: 7,
+    },
+    3: {
+      clue: "GAMBAR 3", // Placeholder clue
+      answer: "WAKTU",
+      row: 5,
+      col: 1,
     },
   },
 };
 
-export default function UtakAtikGathukPasanganNglegena() {
+export default function UtakAtikGathukMurda() {
   const [isCorrect, setIsCorrect] = useState(false);
   const navigate = useNavigate();
 
@@ -36,18 +54,42 @@ export default function UtakAtikGathukPasanganNglegena() {
   };
 
   const handleNextPage = () => {
-    navigate("/pasanganaaksaranglegena/kuis2/nyocokakegambarpasangannglegena");
+    navigate("/pasanganaksaranglegena/kuis2/nyocokakegambarpasangannglegena");
   };
 
   return (
-    <div className="contain">
-      <br />
-      <h1 className="p-20 m-5 text-center">
-        Utak Atik Gathuk Pasangan Aksara Nglegena
-      </h1>
-      <br />
-      <div className="crossword">
-        <Crossword data={data} onCrosswordCorrect={handleCrosswordCorrect} />
+    <div className="crossword-contain">
+      <h1 className="p-20 m-5 text-center">Utak Atik Gathuk Murda</h1>
+      <div className="crossword-game-container">
+        <div className="crossword-crossword">
+          <Crossword data={data} onCrosswordCorrect={handleCrosswordCorrect} />
+        </div>
+        <div className="crossword-clues-with-images">
+          <div className="crossword-clue">
+            <img src={swara} alt="Swara" className="crossword-clue-image" />{" "}
+            <span>1 Down</span>
+          </div>
+          <div className="crossword-clue">
+            <img src={cerkak} alt="cerkak" className="crossword-clue-image" />{" "}
+            <span>2 Down</span>
+          </div>
+          <div className="crossword-clue">
+            <img src={waktu} alt="waktu" className="crossword-clue-image" />{" "}
+            <span>3 Down</span>
+          </div>
+          <div className="crossword-clue">
+            <img src={cembung} alt="cembung" className="crossword-clue-image" />{" "}
+            <span>2 Across</span>
+          </div>
+          <div className="crossword-clue">
+            <img
+              src={punjering}
+              alt="Punjering"
+              className="crossword-clue-image"
+            />{" "}
+            <span>4 Across</span>
+          </div>
+        </div>
       </div>
       {isCorrect && (
         <div className="text-center">

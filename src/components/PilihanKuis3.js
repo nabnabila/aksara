@@ -10,10 +10,10 @@ const PilihanKuis3 = () => {
     <div className="mode">
       <Container>
         <br />
-        <h1 className="p-10 m-5 text-center">Kuis</h1>
+        <h1 className="mt-5 mb-0 text-center">Kuis</h1>
         <br />
         <Row>
-          <Col md={6} className="categoryWrapper" id="categories">
+          <Col md={4} className="categoryWrapper" id="categories">
             <Card className="modeImage">
               <Image
                 src={wordsearchImage}
@@ -21,12 +21,12 @@ const PilihanKuis3 = () => {
                 className="modeimages"
               />
               <div>
-                <div className="p-3 m-3">
+                <div className="p-1 m-1">
                   <Card.Title className="text-center">
                     Nggoleki Tembung
                   </Card.Title>
                 </div>
-                <div className="p-1 m-1 text-center">
+                <div className="text-center">
                   <a
                     href="/aksaramurda/kuis3/nggolekitembangmurda"
                     class="btn btn-custom"
@@ -37,7 +37,7 @@ const PilihanKuis3 = () => {
               </div>
             </Card>
           </Col>
-          <Col md={6} className="categoryWrapper" id="categories">
+          <Col md={4} className="categoryWrapper" id="categories">
             <Card className="modeImage">
               <Image
                 src={aksaramatchImage}
@@ -45,10 +45,10 @@ const PilihanKuis3 = () => {
                 className="modeimages"
               />
               <div>
-                <div className="p-3 m-3">
+                <div className="p-1 m-1">
                   <Card.Title className="text-center">Ngatur Ukara</Card.Title>
                 </div>
-                <div className="p-1 m-1 text-center">
+                <div className="text-center">
                   <a
                     href="/aksaramurda/kuis3/ngaturukaramurda"
                     class="btn btn-custom"
@@ -59,7 +59,7 @@ const PilihanKuis3 = () => {
               </div>
             </Card>
           </Col>
-          <Col md={6} className="categoryWrapper" id="categories">
+          <Col md={4} className="categoryWrapper" id="categories">
             <Card className="modeImage">
               <Image
                 src={crosswordImage}
@@ -67,12 +67,12 @@ const PilihanKuis3 = () => {
                 className="modeimages"
               />
               <div>
-                <div className="p-3 m-3">
+                <div className="p-1 m-1">
                   <Card.Title className="text-center">
                     Utak Atik Gathuk
                   </Card.Title>
                 </div>
-                <div className="p-1 m-1 text-center">
+                <div className="text-center">
                   <a
                     href="/aksaramurda/kuis3/utakatikgathukmurda"
                     class="btn btn-custom"
@@ -83,7 +83,7 @@ const PilihanKuis3 = () => {
               </div>
             </Card>
           </Col>
-          <Col md={6} className="categoryWrapper" id="categories">
+          <Col md={4} className="categoryWrapper" id="categories">
             <Card className="modeImage">
               <Image
                 src={imagematchImage}
@@ -91,12 +91,12 @@ const PilihanKuis3 = () => {
                 className="modeimages"
               />
               <div>
-                <div className="p-3 m-3">
+                <div className="p-1 m-1">
                   <Card.Title className="text-center">
                     Nyocokake Gambar
                   </Card.Title>
                 </div>
-                <div className="p-1 m-1 text-center">
+                <div className="text-center">
                   <a
                     href="/aksaramurda/kuis3/nyocokakegambarmurda"
                     class="btn btn-custom"
@@ -107,7 +107,7 @@ const PilihanKuis3 = () => {
               </div>
             </Card>
           </Col>
-          <Col md={6} className="categoryWrapper">
+          <Col md={4} className="categoryWrapper">
             <Card className="modeImage">
               <Image
                 src={soundmatchImage}
@@ -115,12 +115,12 @@ const PilihanKuis3 = () => {
                 className="modeimages"
               />
               <div>
-                <div className="p-3 m-3">
+                <div className="p-1 m-1">
                   <Card.Title className="text-center">
                     Nyocokake Swara
                   </Card.Title>
                 </div>
-                <div className="p-1 m-1 text-center">
+                <div className="text-center">
                   <a
                     href="/aksaramurda/kuis3/nyocokakeswara"
                     class="btn btn-custom"
@@ -129,6 +129,16 @@ const PilihanKuis3 = () => {
                   </a>
                 </div>
               </div>
+            </Card>
+          </Col>
+          <Col md={4} className="categoryWrapper">
+            <Card className="modeImage1">
+              <a href="/aksaramurda">
+                <i
+                  className="bi bi-arrow-left"
+                  style={{ fontSize: "190px", color: "white" }}
+                ></i>{" "}
+              </a>
             </Card>
           </Col>
         </Row>

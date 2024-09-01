@@ -56,6 +56,10 @@
   background-color: #c6553b !important;
   color: #fff !important;
 }
+.btn-custom1 {
+  background-color: #fff !important;
+  color: #c6553b !important;
+}
 
 .mode {
   height: 85vh;
@@ -70,21 +74,18 @@
   justify-content: center;
   align-items: center;
 }
+.modeImage1 {
+  width: 550px;
+  height: 500px;
+  margin: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #c6553b !important;
+}
 
 .modeimages {
   width: 400px;
   height: 275px;
   padding: 20px;
-}
-
-/* crossword */
-.contain {
-  align-items: center;
-  justify-content: center;
-}
-
-.crossword {
-  padding: 10px;
-  width: 700px;
-  margin: auto;
 }
