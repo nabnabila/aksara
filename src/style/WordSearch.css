@@ -1,7 +1,12 @@
 .wordsearch {
   background: url("../assets/image/bg3.png");
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
 }
 .wordsearch body {
   font-family: Arial, sans-serif;
@@ -16,33 +21,40 @@
   text-align: center;
   color: #333;
   padding-top: 100px;
+  font-size: 36px;
+}
+.wordsearch h2 {
+  text-align: center;
+  color: #333;
+  font-size: 22px;
 }
 
 .wordsearch-clues {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 20px;
 }
 
-.clue {
+.wordsearch-clue {
   margin: 0 10px;
 }
 
-.clue img {
+.wordsearch-clue-image {
   border: 2px solid #ddd;
   border-radius: 5px;
   display: flex;
-  width: 125px !important;
+  width: 200px !important;
 }
 
 .wordsearch-grid {
   display: grid;
-  grid-template-columns: repeat(10, 40px);
-  grid-template-rows: repeat(10, 40px);
-  gap: 5px;
-  justify-content: center;
-  margin-bottom: 20px;
+  grid-template-columns: repeat(var(--grid-size), 40px);
+  grid-template-rows: repeat(var(--grid-size), 40px);
+  justify-items: center;
+  margin: 0 auto;
+  overflow: auto;
+  width: max-content;
 }
 
 .wordseach-row {
@@ -50,14 +62,14 @@
 }
 
 .cell {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-color: #fff;
   border: 2px solid #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
   cursor: pointer;
@@ -65,11 +77,10 @@
 }
 
 .cell.selected {
-  background-color: #88e0ef;
-  border-color: #66d2e5;
+  background-color: #c6553b;
+  border-color: #c6553b;
 }
 button {
-  margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
   color: white;
@@ -82,7 +93,7 @@ button {
 
 .wordsearch button {
   display: block;
-  margin: 20px auto;
+  margin: 5px auto;
 }
 
 button:hover {
@@ -91,13 +102,4 @@ button:hover {
 
 .wordsearch-found-words {
   text-align: center;
-}
-
-.wordsearch-found-words h2 {
-  color: #333;
-}
-
-.wordsearch-found-words div {
-  color: #666;
-  margin: 5px 0;
 }

@@ -45,7 +45,7 @@ const data = {
   },
 };
 
-export default function UtakAtikGathukPasanganNglegena() {
+export default function UtakAtikGathukMurda() {
   const [isCorrect, setIsCorrect] = useState(false);
   const navigate = useNavigate();
 
