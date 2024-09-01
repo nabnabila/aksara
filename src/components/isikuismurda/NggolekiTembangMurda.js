@@ -143,7 +143,12 @@ const NggolekiTembang = () => {
       <div className="wordsearch-clues">
         {clues.map((clue, index) => (
           <div key={index} className="wordsearch-clue">
-            <img src={clue.image} alt={clue.word} style={{ width: "50px" }} />
+            <img
+              className="wordsearch-clue-image"
+              src={clue.image}
+              alt={clue.word}
+              style={{ width: "50px" }}
+            />
           </div>
         ))}
       </div>

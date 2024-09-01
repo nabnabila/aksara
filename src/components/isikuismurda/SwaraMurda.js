@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import sht from "../../assets/audio/kuis/sanghyangtunggal.mp3";
-import contohha from "../../assets/image/aksara1/contohha.png";
-import contohna from "../../assets/image/aksara1/contohna.png";
-import contohca from "../../assets/image/aksara1/contohca.png";
-import contohra from "../../assets/image/aksara1/contohra.png";
+import sht1 from "../../assets/image/kuis/sht1.png";
+import sht2 from "../../assets/image/kuis/sht2.png";
+import sht3 from "../../assets/image/kuis/sht3.png";
+import sht4 from "../../assets/image/kuis/sht4.png";
+
 const SwaraMurda = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -17,10 +18,10 @@ const SwaraMurda = () => {
     audioSrc: sht,
     correctAnswer: "option2",
     options: [
-      { id: "option1", imgSrc: contohha },
-      { id: "option2", imgSrc: contohca },
-      { id: "option3", imgSrc: contohna },
-      { id: "option4", imgSrc: contohra },
+      { id: "option1", imgSrc: sht2 },
+      { id: "option2", imgSrc: sht1 },
+      { id: "option3", imgSrc: sht3 },
+      { id: "option4", imgSrc: sht4 },
     ],
   };
 

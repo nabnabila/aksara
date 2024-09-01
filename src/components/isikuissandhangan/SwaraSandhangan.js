@@ -52,7 +52,7 @@ const SwaraSandhangan = () => {
 
   return (
     <div className="sound-match-game">
-      <h1>Nyocokake Swara Nglegena</h1>
+      <h1>Nyocokake Swara Sandhangan</h1>
 
       <div className="play-button-container">
         <button

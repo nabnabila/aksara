@@ -9,8 +9,29 @@
   padding: 20px;
   font-size: 2.5rem;
   font-weight: 700;
+  color: #fff;
 }
 
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  background-color: #c6553b;
+}
+.navbar-center {
+  flex: 1;
+  text-align: center;
+}
+.back-arrow-navbar {
+  position: absolute;
+  left: 50px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
+}
 .intro {
   height: 60%;
   display: flex;

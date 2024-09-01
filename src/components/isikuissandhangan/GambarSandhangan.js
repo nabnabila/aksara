@@ -46,7 +46,9 @@ const NyocokakeGambar = ({ nextPagePath }) => {
   return (
     <div className="image-cover">
       <div className="image-clue-container">
-        <h1 className="image-clue-container-header">Nyocokake Gambar</h1>
+        <h1 className="image-clue-container-header">
+          Nyocokake Gambar Sandhangan
+        </h1>
         <h2 className="image-clue-container-header1">
           Pilih gambar sing cocog karo aksara
         </h2>

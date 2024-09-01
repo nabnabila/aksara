@@ -61,7 +61,7 @@ export default function UtakAtikGathukMurda() {
     <div className="crossword-contain">
       <h1 className="p-20 m-5 text-center">Utak Atik Gathuk Sandhangan</h1>
       <div className="crossword-game-container">
-        <div className="crossword">
+        <div className="crossword" style={{ width: "500px", height: "500px" }}>
           <Crossword data={data} onCrosswordCorrect={handleCrosswordCorrect} />
         </div>
         <div className="crossword-clues-with-images">

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import glb from "../../assets/audio/kuis/garenglanbagong.mp3";
-import contohha from "../../assets/image/aksara1/contohha.png";
-import contohna from "../../assets/image/aksara1/contohna.png";
-import contohca from "../../assets/image/aksara1/contohca.png";
-import contohra from "../../assets/image/aksara1/contohra.png";
+import glb1 from "../../assets/image/kuis/glb1.png";
+import glb2 from "../../assets/image/kuis/glb2.png";
+import glb3 from "../../assets/image/kuis/glb3.png";
+import glb4 from "../../assets/image/kuis/glb4.png";
+
 const SwaraPasanganMurda = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -15,12 +16,12 @@ const SwaraPasanganMurda = () => {
   // audio data
   const song = {
     audioSrc: glb,
-    correctAnswer: "option2",
+    correctAnswer: "option1",
     options: [
-      { id: "option1", imgSrc: contohha },
-      { id: "option2", imgSrc: contohca },
-      { id: "option3", imgSrc: contohna },
-      { id: "option4", imgSrc: contohra },
+      { id: "option1", imgSrc: glb1 },
+      { id: "option2", imgSrc: glb2 },
+      { id: "option3", imgSrc: glb3 },
+      { id: "option4", imgSrc: glb4 },
     ],
   };
 
