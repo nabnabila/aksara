@@ -1,6 +1,6 @@
 .bg {
   height: 100vh;
-  background: url("../assets/image/bg.png");
+  background: url("../assets/image/bg4.png");
   background-size: cover;
 }
 
@@ -46,12 +46,19 @@
   text-shadow: 1px 1px 3px 3%;
   line-height: 1.2;
 }
+.title1 {
+  font-size: 5em;
+  font-weight: 700;
+  color: #c6553b;
+  text-shadow: 1px 1px 3px 3%;
+  line-height: 1.2;
+}
 
 .note {
   font-size: 2em;
   color: #000000;
   text-shadow: 1px 1px 3px 3%;
-  line-height: 1.4;
+  line-height: 1.5;
   font-weight: 300;
 }
 
