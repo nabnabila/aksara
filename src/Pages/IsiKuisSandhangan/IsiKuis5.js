@@ -1,15 +1,23 @@
-import "../../App.css"; // Adjust the path if necessary
+import "../../App.css";
 import "../../style/SoundMatchGame.css";
+import { Link } from "react-router-dom";
 import NavigationBar from "../../components/NavigationBar";
 import SwaraSandhangan from "../../components/isikuissandhangan/SwaraSandhangan";
 function IsiKuis5() {
   return (
     <div>
-      {/* navigation bar */}
-      <div>
-        <NavigationBar />
+      {/* Navigation Bar Container */}
+      <div className="navbar-container">
+        {/* Back Arrow */}
+        <Link to="/sandhangan/kuis5" className="back-arrow-navbar">
+          <i className="bi bi-arrow-left"></i>
+        </Link>
+
+        {/* Navigation Bar */}
+        <div className="navbar-center">
+          <NavigationBar />
+        </div>
       </div>
-      {/* end of intro section */}
 
       {/* mode */}
       <div>

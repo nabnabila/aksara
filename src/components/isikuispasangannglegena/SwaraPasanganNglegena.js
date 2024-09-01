@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ebb from "../../assets/audio/kuis/empritabuntubedhug.mp3";
-import contohha from "../../assets/image/aksara1/contohha.png";
-import contohna from "../../assets/image/aksara1/contohna.png";
-import contohca from "../../assets/image/aksara1/contohca.png";
-import contohra from "../../assets/image/aksara1/contohra.png";
+import ebb1 from "../../assets/image/kuis/eab1.png";
+import ebb2 from "../../assets/image/kuis/eab2.png";
+import ebb3 from "../../assets/image/kuis/eab3.png";
+import ebb4 from "../../assets/image/kuis/eab4.png";
+
 const SwaraPasanganNglegena = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -15,12 +16,12 @@ const SwaraPasanganNglegena = () => {
   // audio data
   const song = {
     audioSrc: ebb,
-    correctAnswer: "option2",
+    correctAnswer: "option3",
     options: [
-      { id: "option1", imgSrc: contohha },
-      { id: "option2", imgSrc: contohca },
-      { id: "option3", imgSrc: contohna },
-      { id: "option4", imgSrc: contohra },
+      { id: "option1", imgSrc: ebb4 },
+      { id: "option3", imgSrc: ebb1 },
+      { id: "option2", imgSrc: ebb3 },
+      { id: "option4", imgSrc: ebb2 },
     ],
   };
 
