@@ -48,6 +48,11 @@ const Mode3 = () => {
                   style={{ fontSize: "230px", color: "white" }}
                 ></i>{" "}
               </a>
+              <div>
+                <Card.Title className="card-title-back">
+                  Pilih Kategori
+                </Card.Title>
+              </div>
             </Card>
           </Col>
         </Row>

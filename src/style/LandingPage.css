@@ -53,6 +53,11 @@
   text-shadow: 1px 1px 3px 3%;
   line-height: 1.2;
 }
+.card-title-back {
+  color: #fff !important;
+  align-items: center;
+  padding-bottom: 15px;
+}
 
 .note {
   font-size: 2em;
