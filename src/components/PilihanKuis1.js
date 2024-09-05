@@ -139,6 +139,9 @@ const PilihanKuis1 = () => {
                   style={{ fontSize: "190px", color: "white" }}
                 ></i>{" "}
               </a>
+              <div>
+                <Card.Title className="card-title-back">Pilih Mode</Card.Title>
+              </div>
             </Card>
           </Col>
         </Row>

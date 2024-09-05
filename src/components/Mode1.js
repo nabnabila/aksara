@@ -45,9 +45,14 @@ const Mode1 = () => {
               <a href="/">
                 <i
                   className="bi bi-arrow-left"
-                  style={{ fontSize: "230px", color: "white" }}
+                  style={{ fontSize: "200px", color: "white" }}
                 ></i>{" "}
               </a>
+              <div>
+                <Card.Title className="card-title-back">
+                  Pilih Kategori
+                </Card.Title>
+              </div>
             </Card>
           </Col>
         </Row>
