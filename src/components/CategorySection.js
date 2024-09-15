@@ -4,7 +4,6 @@ import Pasangan1Image from "../assets/image/Pasangan1.png";
 import MurdaImage from "../assets/image/Murda.png";
 import Pasangan2Image from "../assets/image/Pasangan2.png";
 import Sandhangan1Image from "../assets/image/Sandhangan1.png";
-import Sandhangan2Image from "../assets/image/Sandhangan2.png";
 
 const CategorySection = () => {
   return (
