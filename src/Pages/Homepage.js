@@ -1,10 +1,10 @@
-import "../App.css"; // Adjust the path if necessary
-import NavigationBar from "../components/NavigationBar"; // Adjust the path if necessary
-import Intro from "../components/Intro"; // Adjust the path if necessary
-import "../style/LandingPage.css"; // Adjust the path if necessary
-import CategorySection from "../components/CategorySection"; // Adjust the path if necessary
+import NavigationBar from "../components/NavigationBar";
+import Intro from "../components/Intro";
+import CategorySection from "../components/CategorySection";
 
-function HomePage() {
+import React from "react";
+
+const HomePage = () => {
   return (
     <div>
       {/* intro section */}
@@ -14,13 +14,13 @@ function HomePage() {
       </div>
       {/* end of intro section */}
 
-      {/* category section */}
+      {/*category section*/}
       <div className="category">
         <CategorySection />
       </div>
       {/* end of category section */}
     </div>
   );
-}
+};
 
 export default HomePage;
