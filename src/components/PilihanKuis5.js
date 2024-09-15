@@ -10,7 +10,7 @@ const PilihanKuis5 = () => {
     <div className="mode">
       <Container>
         <br />
-        <h1 className="mt-5 mb-0 text-center">Kuis</h1>
+        <h1 className="mb-5 mt-0 text-center">Kuis</h1>
         <br />
         <Row>
           <Col md={4} className="categoryWrapper" id="categories">

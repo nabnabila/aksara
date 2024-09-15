@@ -78,7 +78,7 @@ function NgaturUkara() {
     <div className="arrangewords">
       <h1 className="arrangewords-header">
         {" "}
-        Ngatur Ukara Pasangan Aksara Nglegena
+        Ngatur Ukara PAsangan Aksara Nglegena
       </h1>
       <p className="arrangewords-question-text">{question}</p>{" "}
       {/* Styled question */}
