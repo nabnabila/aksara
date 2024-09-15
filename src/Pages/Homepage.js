@@ -1,8 +1,8 @@
-import "../App.css"; // Adjust the path if necessary
-import NavigationBar from "../components/NavigationBar"; // Adjust the path if necessary
-import Intro from "../components/Intro"; // Adjust the path if necessary
-import "../style/LandingPage.css"; // Adjust the path if necessary
-import CategorySection from "../components/CategorySection"; // Adjust the path if necessary
+import "../App.css";
+import NavigationBar from "../components/NavigationBar";
+import Intro from "../components/Intro";
+import "../style/LandingPage.css";
+import CategorySection from "../components/CategorySection";
 
 function HomePage() {
   return (

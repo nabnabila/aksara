@@ -176,7 +176,7 @@ const NggolekiTembang = () => {
           ))}
         </div>
 
-        <button onClick={clearSelection}>Clear Selection</button>
+        <button onClick={clearSelection}>Hapus Pilihan</button>
         <div className="wordsearch-found-words">
           <h2>Kata:</h2>
           {foundWords.map((word, index) => (

@@ -115,14 +115,14 @@ function NgaturUkara() {
         ))}
       </div>
       <div className="arrangewords-buttons">
-        <button onClick={checkArrangement}>Check Arrangement</button>
-        <button onClick={clearSelection}>Clear Selection</button>
-        <button onClick={reshuffleImages}>Reshuffle Images</button>
+        <button onClick={checkArrangement}>Cek</button>
+        <button onClick={clearSelection}>Hapus Pilihan</button>
+        <button onClick={reshuffleImages}>Atur Ulang</button>
       </div>
       {feedback && <p className="feedback">{feedback}</p>}{" "}
       {/* Feedback display */}
       {feedback === "Bener!" && (
-        <button onClick={goToNextPage}>Next</button> // Next button if correct
+        <button onClick={goToNextPage}>Lanjut</button> //
       )}
     </div>
   );

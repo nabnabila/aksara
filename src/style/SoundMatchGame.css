@@ -12,7 +12,7 @@
 }
 .play-button-container {
   display: flex;
-  justify-content: center; /* Centers the button horizontally */
+  justify-content: center;
 }
 
 .play-button {
